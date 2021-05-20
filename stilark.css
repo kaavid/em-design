@@ -1,0 +1,363 @@
+/* @override 
+
+http://folk.ntnu.no/emiliemo/stilark.css */
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px; /* 1rem er nå 10px */
+    font-family: roboto, sans-serif;
+    font-style: normal;
+}
+
+body {
+	font-size: 1.4rem;
+}
+
+header {
+	font-size: 1.3rem;
+}
+
+main {
+}
+
+
+nav#hoved ul { /* øverst på siden */
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	text-align: center;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+nav#hoved li { /* øverst på siden */
+	list-style-type: none;
+}
+
+nav#hoved a { /* øverst på siden */
+	text-decoration: none;
+	color: #454545;
+    font-weight: 400;
+}
+
+nav#hoved a:hover { /* øverst på siden */
+    color: lightgrey;
+}
+
+nav#hoved .aktiv a { /* øverst på siden */
+color: #c98477;
+text-decoration: underline;
+}
+
+nav#intern { /* nederst på siden */
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+    font-weight: 400;
+    font-size: 1.3rem;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 60rem;
+}
+
+nav#intern a:last-of-type { /* nederst på siden: NESTE PROSJEKT */
+	text-align:right;
+    text-decoration: none;
+    color: #c98477;
+
+}
+
+nav#intern a:first-of-type { /* nederst på siden: FORRIGE PROSJEKT */
+    text-align:left;
+    text-decoration: none;
+    color: #c98477;
+}
+
+nav#intern a:hover { /* nederst på siden */
+    color: #e8afa6;
+}
+
+nav#til_toppen { /* nederst på siden, til toppen */
+    text-align: center;
+    font-size: 1rem;
+}
+
+nav#til_toppen a { /* nederst på siden, til toppen */
+    color: grey;
+}
+
+nav#til_toppen a:hover { /* nederst på siden, til toppen */
+    color: lightgrey;
+}
+
+h1 a {  /* EMdesign */
+	display: block;
+	width: 30vw;
+	margin-left: auto;
+	margin-right: auto;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    max-width: 17rem;
+}
+
+article#forside { /* innholdet på forsiden */
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+article#forside figure { /* Hvert prosjekt på forsiden */
+    margin-bottom: 3rem;
+}
+
+article a { /* for å unngå strek under linker på forsiden */  
+    text-decoration: none;
+}
+
+main a { /* linker i main */
+    color: #454545;
+}
+
+figcaption { 	/* Overskrift over prosjekt på forsiden */
+    font-size: 1.5rem;
+    font-weight: 300;
+	text-decoration: none;
+    color: #454545;
+    text-transform: uppercase;
+}
+
+figure img { 
+	max-width: 100%;
+}
+
+h2 { /* Overskrift på siden */
+    font-size: 2.2rem;
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    font-weight: 400;
+    color: #454545;
+    text-transform: uppercase;
+}
+
+section.bakgrunnsfarge { /* Rosa på prosjektsidene */       
+    background-color: #f9edea;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+}
+
+section.innhold { /* innholdet på prosjektsidene, om meg og kontakt */
+	max-width: 60rem;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+figure.overskriftsbilde { /* Under overskriften på siden */
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1rem;
+    max-width: 45rem;  
+}
+
+figure.overskriftsbilde img { /* Bildet øverst på prosjektsidene */  
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p.oppgaveinfo {    /* Teksten øverst på prosjektsidene */
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: grey;
+    line-height: 2rem;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60vw;
+    max-width: 45rem;
+}
+
+h3 {    /* Underoverskrifter */
+    font-weight: 400;
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+    color: #454545;
+}
+
+p {     /* Vanlig brødtekst */
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 2.5rem;
+    color: #454545;
+    margin-bottom: 2.5rem;
+}
+
+blockquote{ /* sitat */
+    font-weight: 300;
+    color: #454545;
+    font-size: 1.6rem;
+    margin-bottom: 2.5rem;
+    margin-left: 6rem;
+    margin-right: 4rem;
+    line-height: 2.5rem;
+}
+
+#sitat{ /* sitattegn */
+    quotes: "\201C""\201D""\2018""\2019";
+}
+
+#sitat:before { /* sitattegn */
+    font-family: serif;
+    content: open-quote;
+    display: block;
+    position: relative;
+    top: 4rem;
+    color: #f7dcd3;
+    font-size: 5em;
+    right: 4.5rem;
+}
+
+p#sitatslutt { /* sitatforfatter */
+    color: grey;
+    text-align: right;
+    font-style: italic;
+    margin-top: -2.5rem;
+    margin-right: 2rem;
+}
+
+figure.ramme { /* til skisser som har en uklar bilderamme */
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgrey;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    max-width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure.utenramme { /* til skisser uten behov for ramme */
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    max-width: 50rem;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+#om_meg figure { /* portrett av meg */
+    margin: 2rem;
+    float: right;
+    width: 20rem;
+}
+
+footer {
+    font-size: 1rem;
+    font-weight: 300;
+    color: black;
+    background-color: #f7dcd3;
+    text-align: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    margin-top: 6rem;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+}
+
+
+
+
+@media screen and (min-width:800px) {
+
+html {    
+	font-size: 12px;
+}
+
+article#forside { /* grids på forsiden */     
+    display: grid;
+	grid-template-columns: 1fr 1fr;
+    grid-column-gap: 3rem;
+    grid-row-gap: 3rem;
+}
+
+article#forside figure { /* grids på forsiden */    
+    margin-bottom: 0rem;
+}
+
+#forside h2 { /* overskrift på forsiden, midtstilt */       
+    grid-column: 1 / -1;
+}
+    
+#forside img { /* prosjekter på forsiden */    
+    opacity: 1;
+    transition: .3s ease;
+    width: 100%;
+}
+
+#forside figure {
+    position: relative;
+}
+
+#forside figcaption {
+    color: black;
+    font-size: 1.7rem; 
+    font-weight: 400;
+    transition: .3s ease;
+    opacity: 0;
+    position: absolute;
+    left: 3rem;
+    bottom: 3rem;
+}
+
+#forside figure:hover img {
+     opacity: 0.3;
+}
+
+#forside figure:hover figcaption {
+     opacity: 1;
+}   
+    
+
+         
+
+}
+
+@media screen and (min-width:1300px) {
+
+    
+article#forside {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+article figure {     
+    margin-bottom: 0rem;
+}
+
+ 
+    
+
+}
+
+
+@media screen and (max-width:450px){
+    
+#om_meg figure { /* portrett av meg */
+margin: 1rem;
+float: right;
+width: 15rem;
+}
