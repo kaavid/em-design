@@ -32,8 +32,8 @@ nav#hoved ul { /* øverst på siden */
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	text-align: center;
-    margin-left: 10rem;
-    margin-right: 10rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
 }
 
 nav#hoved li { /* øverst på siden */
