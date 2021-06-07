@@ -12,7 +12,7 @@ http://folk.ntnu.no/emiliemo/stilark.css */
 
 html {
 	font-size: 10px; /* 1rem er nå 10px */
-    font-family: roboto, sans-serif;
+    font-family: quasimoda, roboto, sans-serif;
     font-style: normal;
 }
 
@@ -32,8 +32,8 @@ nav#hoved ul { /* øverst på siden */
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	text-align: center;
-    margin-left: 5rem;
-    margin-right: 5rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
 }
 
 nav#hoved li { /* øverst på siden */
@@ -43,7 +43,14 @@ nav#hoved li { /* øverst på siden */
 nav#hoved a { /* øverst på siden */
 	text-decoration: none;
 	color: #454545;
-    font-weight: 400;
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+
+section.menyfarge {
+    background-color: rgba(0, 0, 0, 0.01);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 nav#hoved a:hover { /* øverst på siden */
@@ -51,14 +58,14 @@ nav#hoved a:hover { /* øverst på siden */
 }
 
 nav#hoved .aktiv a { /* øverst på siden */
-color: #c98477;
-text-decoration: underline;
+    color: #c98477;
+    font-weight: 500;
 }
 
 nav#intern { /* nederst på siden */
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 1.3rem;
     padding-top: 5rem;
     padding-bottom: 3rem;
@@ -104,9 +111,9 @@ h1 a {  /* EMdesign */
 	width: 30vw;
 	margin-left: auto;
 	margin-right: auto;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    max-width: 17rem;
+    padding-top: 5rem;
+    padding-bottom: 2.5rem;
+    max-width: 12rem;
 }
 
 article#forside { /* innholdet på forsiden */
@@ -127,9 +134,10 @@ main a { /* linker i main */
     color: #454545;
 }
 
+
 figcaption { 	/* Overskrift over prosjekt på forsiden */
     font-size: 1.5rem;
-    font-weight: 300;
+    font-weight: 400;
 	text-decoration: none;
     color: #454545;
     text-transform: uppercase;
@@ -142,33 +150,35 @@ figure img {
 h2 { /* Overskrift på siden */
     font-size: 2.2rem;
     text-align: center;
-    padding-top: 5rem;
-    padding-bottom: 3rem;
-    font-weight: 400;
+    padding-top: 4rem;
+    padding-bottom: 2.5rem;
+    font-weight: 600;
     color: #454545;
     text-transform: uppercase;
 }
 
-section.bakgrunnsfarge { /* Rosa på prosjektsidene */       
+section.bakgrunnsfarge { /* Rosa på prosjektsidene */     
     background-color: #f9edea;
     padding-top: 4rem;
     padding-bottom: 3rem;
+    margin-bottom: 2.5rem;
 }
 
 section.innhold { /* innholdet på prosjektsidene, om meg og kontakt */
-	max-width: 60rem;
+	max-width: 52rem;
 	margin-left: auto;
 	margin-right: auto;
-	padding-left: 2rem;
-	padding-right: 2rem;
+	padding-left: 2.5rem;
+	padding-right: 2.5rem;
 }
 
 figure.overskriftsbilde { /* Under overskriften på siden */
     width: 60vw;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 1rem;
+    padding-bottom: 3rem;
     max-width: 45rem;  
+    filter: drop-shadow(0 0 1rem rgba(0, 0, 0, 0.2));
 }
 
 figure.overskriftsbilde img { /* Bildet øverst på prosjektsidene */  
@@ -178,10 +188,10 @@ figure.overskriftsbilde img { /* Bildet øverst på prosjektsidene */
 }
 
 p.oppgaveinfo {    /* Teksten øverst på prosjektsidene */
-    font-weight: 400;
+    font-weight: 500;
     font-size: 1.1rem;
-    color: grey;
-    line-height: 2rem;
+    color: #454545;
+    line-height: 1.7rem;
     margin-bottom: 0;
     margin-left: auto;
     margin-right: auto;
@@ -190,16 +200,17 @@ p.oppgaveinfo {    /* Teksten øverst på prosjektsidene */
 }
 
 h3 {    /* Underoverskrifter */
-    font-weight: 400;
+    font-weight: 500;
     padding-top: 2rem;
-    padding-bottom: 0.5rem;
+    padding-bottom: 1rem;
+    line-height: 1.2rem;
     color: #454545;
 }
 
 p {     /* Vanlig brødtekst */
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 300;
-    line-height: 2.5rem;
+    line-height: 2rem;
     color: #454545;
     margin-bottom: 2.5rem;
 }
@@ -207,11 +218,11 @@ p {     /* Vanlig brødtekst */
 blockquote{ /* sitat */
     font-weight: 300;
     color: #454545;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     margin-bottom: 2.5rem;
     margin-left: 6rem;
     margin-right: 4rem;
-    line-height: 2.5rem;
+    line-height: 2rem;
 }
 
 #sitat{ /* sitattegn */
@@ -225,7 +236,7 @@ blockquote{ /* sitat */
     position: relative;
     top: 4rem;
     color: #f7dcd3;
-    font-size: 5em;
+    font-size: 6em;
     right: 4.5rem;
 }
 
@@ -264,7 +275,7 @@ figure.utenramme { /* til skisser uten behov for ramme */
 
 footer {
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: 400;
     color: black;
     background-color: #f7dcd3;
     text-align: center;
@@ -331,7 +342,14 @@ article#forside figure { /* grids på forsiden */
      opacity: 1;
 }   
     
-
+section.innhold { /* innholdet på prosjektsidene, om meg og kontakt */
+max-width: 57rem;
+}
+    
+nav#hoved ul { /* øverst på siden */
+margin-left: 15rem;
+margin-right: 15rem;
+}
          
 
 }
@@ -348,12 +366,12 @@ article figure {
     margin-bottom: 0rem;
 }
 
- 
-    
-
+section.innhold { /* innholdet på prosjektsidene, om meg og kontakt */
+max-width: 65rem;
 }
-
-
+    
+    
+}
 @media screen and (max-width:450px){
     
 #om_meg figure { /* portrett av meg */
