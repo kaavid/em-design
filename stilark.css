@@ -265,9 +265,18 @@ figure.utenramme { /* til skisser uten behov for ramme */
     margin-right: auto;    
 }
 
-#om_meg figure { /* portrett av meg */
-    margin: 2rem;
+#om_meg_portrett { /* portrett av meg */
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
     float: right;
+    width: 20rem;
+}
+
+#om_meg_portrett_to { /* portrett av meg */
+    margin-right: 2rem;
+    margin-top: 0.5rem;
+    float: left;
     width: 20rem;
 }
 
