@@ -151,7 +151,11 @@ h2 { /* Overskrift på siden */
     padding-top: 4rem;
     padding-bottom: 2.5rem;
     font-weight: 600;
+    max-width: 43rem;
+    margin-left: auto;
+    margin-right: auto;
     color: #454545;
+    line-height: 2.9rem;
     text-transform: uppercase;
 }
 
@@ -166,8 +170,8 @@ section.innhold { /* innholdet på prosjektsidene, om meg og kontakt */
 	max-width: 52rem;
 	margin-left: auto;
 	margin-right: auto;
-	padding-left: 2.5rem;
-	padding-right: 2.5rem;
+	padding-left: 3rem;
+	padding-right: 3rem;
 }
 
 figure.overskriftsbilde { /* Under overskriften på siden */
@@ -302,7 +306,7 @@ footer a {
 @media screen and (min-width:600px) {
 
 html {    
-	font-size: 12px;
+	font-size: 11px;
 }
 
 article#forside { /* grids på forsiden */     
@@ -340,18 +344,54 @@ article#forside figure { /* grids på forsiden */
     position: absolute;
     left: 3rem;
     bottom: 3rem;
+    padding-right: 1rem;
 }
 
 #forside figure:hover img {
      opacity: 0.3;
+     transform: scale(1.05);
 }
 
 #forside figure:hover figcaption {
      opacity: 1;
+    transform: scale(1.05);
 }   
     
 section.innhold { /* innholdet på prosjektsidene, om meg og kontakt */
-max-width: 57rem;
+    max-width: 45rem;
+}
+    
+nav#hoved ul { /* øverst på siden */
+    max-width: 45rem;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    
+    h2 {
+    max-width: 45rem;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    
+}
+
+
+
+    
+@media screen and (min-width:900px) {
+
+html {    
+	font-size: 12px;
+}
+    
+ h2 {
+    max-width: 57rem;
+    margin-left: auto;
+    margin-right: auto;
+    }
+        
+section.innhold { /* innholdet på   prosjektsidene, om meg og kontakt */
+    max-width: 57rem;
 }
     
 nav#hoved ul { /* øverst på siden */
@@ -359,9 +399,13 @@ nav#hoved ul { /* øverst på siden */
     margin-left: auto;
     margin-right: auto;
     }
-         
-
+    
+  
+    
+    
 }
+
+
 
 @media screen and (min-width:1200px) {
 
